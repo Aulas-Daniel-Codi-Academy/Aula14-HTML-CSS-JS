@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Viagem</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="img/png" href="../public/carro.png" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculadora de Custo de Viagem</h1>
+      <form id="formViagem">
+        <input
+          type="text"
+          id="origem"
+          placeholder="Cidade de origem (ex: Rio)"
+          required
+        />
+        <input
+          type="text"
+          id="destino"
+          placeholder="Cidade de destino (ex: SP)"
+          required
+        />
+        <input
+          type="number"
+          id="autonomia"
+          placeholder="Autonomia (km/L)"
+          required
+        />
+        <input
+          type="number"
+          id="preco"
+          placeholder="Preço do combustível (R$)"
+          step="0.01"
+          required
+        />
+        <button type="submit">Calcular Custo</button>
+      </form>
+      <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
